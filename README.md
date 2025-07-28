@@ -1,8 +1,11 @@
 # 📚 DSA with Java
 
-Welcome to my **Data Structures and Algorithms** (DSA) learning repository using **Java** 🚀
+# Data Structures and Algorithms in Java 🚀
 
-This repo is my personal notebook + practice playground — all the DSA concepts I learn, code, debug, and cry over (just a little 🥲) while prepping for **placements, interviews**, and leveling up my skills are right here!
+This repository is where I document and practice DSA using Java — everything from basic concepts to advanced problems. I'm building this as part of my placement and interview prep.
+
+It's my learning journal — where I code, debug, learn, and grow.
+
 
 ---
 
