@@ -1,6 +1,9 @@
 public class Fucntions {
     public static void main(String[] args) {
         sum();
+        
+        int ans = sum1(2, 4);
+        System.out.println(ans);
     }
 
     static void sum()
@@ -10,4 +13,9 @@ public class Fucntions {
         System.out.println(a + b);
     }
 
+    static int sum1(int d,int c)
+    {
+        int sum = d + c;
+        return sum;
+    }
 }
