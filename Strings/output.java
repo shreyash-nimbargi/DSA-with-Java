@@ -11,7 +11,7 @@ public class output {
     {
         System.out.println("a" + "b");
         System.out.println('a' + 'b');
-        System.out.println("a" + 1); // integer will be converted to Integer that will call toString()
+        System.out.println("a" + 1); // integer  converted to Integer that will call toString()
     }
     public static void main(String args[])
     {

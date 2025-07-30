@@ -1,6 +1,6 @@
 //number of rows = number of times the outer loop runs
 
-public class patern {
+public class Patern {
     public static void main(String[] args) {
         pt1(4);
     }
