@@ -4,8 +4,15 @@ public class Fucntions {
         
         int ans = sum1(2, 4);
         System.out.println(ans);
+        String ans1 = greet("Hello");
+        System.out.println(ans1);
     }
 
+        static String greet(String yoo)
+        {
+            return "Hello";
+            
+        }
     static void sum()
     {
         int a = 9;
