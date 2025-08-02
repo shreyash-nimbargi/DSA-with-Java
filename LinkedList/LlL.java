@@ -19,12 +19,10 @@ public class LlL {
         c.next = d;
         
         Node temp = a;
-        for(int i =1;i<=4;i++)
-        {
-            System.out.println(temp.data+" ");
-            temp = temp.next;
-            
-        }
+      while (temp!=null) {
+        System.out.println(temp.data);
+        temp= temp.next;
+      }
 
     }
 }
