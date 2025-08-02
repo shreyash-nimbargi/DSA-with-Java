@@ -18,10 +18,13 @@ public class LlL {
         b.next = c;
         c.next = d;
         
-        System.out.println(a.data);
-        System.out.println(a.next.data);
-        System.out.println(a.next.next.data);
-        System.out.println(a.next.next.next.data);
+        Node temp = a;
+        for(int i =1;i<=4;i++)
+        {
+            System.out.println(temp.data+" ");
+            temp = temp.next;
+            
+        }
 
     }
 }
