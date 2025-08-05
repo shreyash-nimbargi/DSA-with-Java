@@ -79,8 +79,8 @@ public class Linklist {
         Node last = head.next;
         while(last.next != null)
         {
-            last = head.next;
-            slast = head;
+            last = last.next;
+            slast = slast.next;
         }
     }
     //print the elements
@@ -104,7 +104,7 @@ public class Linklist {
         l.addFirst(1);
         l.addLast(3);
         l.printList();
-        l.deleteFirst(2);
+        l.deleteFirst();
         l.printList();
     }
 }
