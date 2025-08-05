@@ -18,6 +18,27 @@ public class DoublyLL {
        
        head = newNode;
     }
+    
+    //insert
+
+    public void insertLast(int data)
+    {
+        Node newNode = new Node(data);
+
+        if(head == null)
+        {
+            head = newNode;
+        }
+        Node last = head;
+        while(last.next != null)
+        {
+            last = last.next;
+
+        }
+        last.next = newNode;
+        newNode.prev = last;
+    }
+    //display
 
     public  void display()
     {
@@ -49,6 +70,7 @@ public class DoublyLL {
         l.insertNode(2);
         l.insertNode(1);
         l.insertNode(0);
+        l.insertLast(23);
         l.display();
     }
 }
