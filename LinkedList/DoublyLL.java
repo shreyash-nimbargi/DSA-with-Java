@@ -28,6 +28,7 @@ public class DoublyLL {
         if(head == null)
         {
             head = newNode;
+            newNode.prev = null;
         }
         Node last = head;
         while(last.next != null)
@@ -42,7 +43,9 @@ public class DoublyLL {
 
     public  void display()
     {
-        
+        System.out.println();
+        System.out.println("***** LINKED LIST *****");
+        System.out.println();
         Node temp = head;
         System.out.print("NULL <-> ");
         while(temp != null)
