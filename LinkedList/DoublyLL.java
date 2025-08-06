@@ -18,14 +18,39 @@ public class DoublyLL {
        
        head = newNode;
     }
-    
+    //insert at middle
+
+    public void insertin(int data)
+    {
+        Node temp = head;
+        if(temp == null)
+        {
+            return;
+        }
+        Node newNode = new Node(data);
+        while(temp != null)
+        {
+            if(temp.data == data)
+            {
+               temp.next = newNode;
+               newNode.prev = temp;
+
+               if(temp.next != null)
+               {
+                newNode.next = temp.next.next;
+                temp.next.next = newNode;
+               }
+            }
+            temp = temp.next;
+        }
+    }
     //insert
 
     public void insertLast(int data)
     {
         Node newNode = new Node(data);
 
-        if(head == null)
+        if(head == null)   //edge case
         {
             head = newNode;
             newNode.prev = null;
