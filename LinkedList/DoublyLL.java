@@ -39,6 +39,37 @@ public class DoublyLL {
         last.next = newNode;
         newNode.prev = last;
     }
+
+    //reverse the ll
+
+    public void displayrev()
+    {
+        //traverse till last
+       Node temp = head;
+
+       if(temp == null)
+       {
+        System.out.println("Empty");
+        return;
+       }
+       while(temp.next != null)
+       {
+        temp = temp.next;
+        
+       }
+       //temp is at last
+
+       //print it in reverse
+
+       System.out.println("NULL <-> ");
+
+       while(temp !=null)
+       {
+        System.out.print(temp.data+" <-> ");
+        temp = temp.prev;
+       }
+       
+    }
     //display
 
     public  void display()
@@ -75,5 +106,6 @@ public class DoublyLL {
         l.insertNode(0);
         l.insertLast(23);
         l.display();
+        l.displayrev();
     }
 }
