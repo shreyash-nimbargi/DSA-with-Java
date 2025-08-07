@@ -1,7 +1,7 @@
 
 public class DoublyLL {
-    Node head;
-
+    private Node head;
+    private int size;
     public DoublyLL()
     {
         this.head = null;
@@ -9,6 +9,7 @@ public class DoublyLL {
     public  void insertNode(int data)
     {
         Node newNode = new Node(data);
+        size++;
         newNode.next = head;
         newNode.prev = null;
         if(head != null)
@@ -28,6 +29,7 @@ public class DoublyLL {
             return;
         }
         Node newNode = new Node(data);
+        size++;
         while(temp != null)
         {
             if(temp.data == data)
@@ -49,11 +51,12 @@ public class DoublyLL {
     public void insertLast(int data)
     {
         Node newNode = new Node(data);
-
+        size++;
         if(head == null)   //edge case
         {
             head = newNode;
             newNode.prev = null;
+            return;
         }
         Node last = head;
         while(last.next != null)
@@ -95,6 +98,25 @@ public class DoublyLL {
        }
        
     }
+
+    //remove duplicates
+
+    public void duplicates()
+    {
+        Node node = head;
+        
+        while(node.next != null)
+        {
+            if(node.data == node.next.data)
+            {
+                node.next = node.next.next;
+                size--;
+            }
+            else{
+                node = node.next;
+            }
+        }
+    }
     //display
 
     public  void display()
@@ -110,6 +132,7 @@ public class DoublyLL {
             temp = temp.next;
         }
         System.out.println("NULL");
+        System.out.println("Size = "+size);
     }
     class Node{
         int data;
@@ -128,8 +151,13 @@ public class DoublyLL {
         l.insertNode(3);
         l.insertNode(2);
         l.insertNode(1);
+        l.insertNode(1);
+        l.insertNode(1);
         l.insertNode(0);
         l.insertLast(23);
+        
+        
+        l.duplicates();
         l.display();
         l.displayrev();
     }
