@@ -8,9 +8,6 @@ public class ArrayLs {
     list.add(1);
     list.add(2);
     System.out.println(list);
-
-    int ele = list.get(2);
-        System.out.println(ele);
     }
     
 }
