@@ -1,6 +1,7 @@
 import java.util.*;
 public class array{
-    public static void main(String args[])
+
+    public static void first()
     {
         int[] arr = new int[4];
         arr[0] = 20;
@@ -20,5 +21,27 @@ public class array{
         {
             System.out.print(str[j]);
         }
+
+       
+    }
+     public static void sumofdigits()
+        {
+            System.out.println("\nEnter here : ");
+            Scanner sc = new Scanner(System.in);
+            int n = sc.nextInt();
+            int [] arr = new int[n];
+            int sum = 0;
+            while(n>0)
+            {
+
+                sum = sum + n % 10;
+                n = n/10;
+            }
+            System.out.println(sum);
+        }
+    public static void main(String args[])
+    {
+        first();
+        sumofdigits();
     }
 }
