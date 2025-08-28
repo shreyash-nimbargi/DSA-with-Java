@@ -20,7 +20,7 @@ public static void star2()
             }
             else{
                 System.out.print(" ");
-            }
+            } 
             
         }
         System.out.println();
