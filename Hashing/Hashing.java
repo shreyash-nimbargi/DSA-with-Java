@@ -22,6 +22,10 @@ public class Hashing
         //deleting the elements
         mp.remove("Om");
         System.out.println(mp.get("Om"));
+
+        //checking the elements in the hashmap
+
+        System.out.println(mp.containsKey("Shreyash"));
     }
     public static void main(String[] args) {
         HashmapMethods();
