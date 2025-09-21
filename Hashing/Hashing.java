@@ -18,6 +18,10 @@ public class Hashing
         //Changing or updating the value
         mp.put("Om", 25);
         System.out.println(mp.get("Om"));
+
+        //deleting the elements
+        mp.remove("Om");
+        System.out.println(mp.get("Om"));
     }
     public static void main(String[] args) {
         HashmapMethods();
