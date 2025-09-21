@@ -26,6 +26,14 @@ public class Hashing
         //checking the elements in the hashmap
 
         System.out.println(mp.containsKey("Shreyash"));
+
+        //put value if not present in the hashmap
+        if(!mp.containsKey("Nikhil"))
+        {
+            mp.put("Nikhil", 10);
+            System.out.println(mp.get("Nikhil"));
+        }
+        
     }
     public static void main(String[] args) {
         HashmapMethods();
