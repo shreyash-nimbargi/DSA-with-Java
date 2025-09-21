@@ -34,6 +34,20 @@ public class Hashing
             System.out.println(mp.get("Nikhil"));
         }
         
+        //print all the keys in the hashmap
+
+        System.out.println(mp.keySet());
+
+        //print all the values
+        System.out.println(mp.values());
+
+        //print all the Set
+        System.out.println(mp.entrySet());
+
+        for(var e: mp.entrySet())
+        {
+            System.out.println("Age of %s is %d",e.getKey(),e.getValue());
+        }
     }
     public static void main(String[] args) {
         HashmapMethods();
