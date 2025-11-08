@@ -1,5 +1,3 @@
-
-
 public class Linklist {
     Node head;
 
