@@ -7,15 +7,18 @@ public class sum {
             return n;
         }
         int result = n + summ(n-1);
+        
         return result;
     }
 
     public static boolean isSorted(int[] arr,int i)
     {
-        if(i == arr.length -1) return true;
-        if(arr[i]>arr[i+1]) return false;
 
-       return isSorted(arr, i + 1);
+    if(i == arr.length -1) return true;
+    if(arr[i]>arr[i+1]) return false;
+
+    return isSorted(arr, i + 1);
+
     }
     public static void main(String[] args) {
         int n = 5;

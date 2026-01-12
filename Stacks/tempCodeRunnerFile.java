@@ -1,1 +1,1 @@
-Stack<Integer> rt = new Stack<>();
+st.pop();

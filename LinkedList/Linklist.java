@@ -95,14 +95,36 @@ public class Linklist {
     }
 
     
+  public void cycle()
+        {
+            Node slow = head;
+            Node fast = head;
 
+            while(fast != null && fast.next != null)
+            {
+                
+                slow = slow.next;
+                fast = fast.next.next;
+                if(slow == fast)
+                {
+                    System.out.println("Cycle detected");
+                    return;
+                } 
+                else System.out.println("NO");
+            }
+
+
+
+        }
     public static void main(String[] args) {
-        Linklist l = new Linklist();
-        l.addFirst(2);
-        l.addFirst(1);
-        l.addLast(3);
-        l.printList();
-        l.deleteFirst();
-        l.printList();
+       Node head = new Node(1);
+        
+        // Linklist l = new Linklist();
+        // l.addFirst(2);
+        // l.addFirst(1);
+        // l.addLast(3);
+        // l.printList();
+        // l.deleteFirst();
+        // l.printList();
     }
 }
